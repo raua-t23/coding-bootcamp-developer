@@ -1,0 +1,41 @@
+{
+    "data": {
+        "restaurants": [
+            {
+                "id": 1,
+                "name": "The Fancy Restaurant",
+                "description": "The Fancy Restaurant is a very fancy restaurant",
+                "location": "Augsburg"
+            },
+            {
+                "id": 1,
+                "name": "Chinarestaurant Mykonos",
+                "description": "5-star rated fusion of Greek and Chinese cuisine",
+                "location": "München"
+            }
+        ],
+        "products": [
+            {
+                "id": 1,
+                "name": "Pommes Rot-Weiß",
+                "description": "Lecker Pommes mit Ketchup und Mayo.",
+                "price": 4.99,
+                "imageUrl": "https://via.placeholder.com/900x450"
+            },
+            {
+                "id": 2,
+                "name": "Salat",
+                "description": "Grün, frisch, knackig – Salat halt.",
+                "price": 5.49,
+                "imageUrl": "https://via.placeholder.com/900x450"
+            },
+            {
+                "id": 3,
+                "name": "Hamburger",
+                "description": "Fleisch, gebraten, im labbrigen Brötchen.",
+                "price": 5.49,
+                "imageUrl": "https://via.placeholder.com/900x450"
+            }
+        ]
+    }
+}

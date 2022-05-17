@@ -1,9 +1,12 @@
 <script setup>
-import HelloWorld from '@/components/HelloWorld.vue';
-</script>
+import ProductListComponent from '../components/ProductListComponent.vue';
 
+defineProps({
+  data: Object,
+});
+</script>
 <template>
-  <main>
-    <HelloWorld msg="Hello World!" />
-  </main>
+  <div class="home">
+    <ProductListComponent :products="data.products"></ProductListComponent>
+  </div>
 </template>

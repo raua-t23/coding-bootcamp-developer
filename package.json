@@ -2,6 +2,7 @@
   "name": "coding-bootcamp-developer",
   "version": "0.0.0",
   "scripts": {
+    "cypress:open": "cypress open",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 5050",
