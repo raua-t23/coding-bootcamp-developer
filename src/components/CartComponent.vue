@@ -16,6 +16,10 @@ const listProduct = (productId) => {
   return `${store.getters.countById(productId)} * ${data.products[index].name} =
   ${((data.products[index].price * store.getters.countById(productId)) / 100).toFixed(2)} €`;
 };
+
+const processCheckout = () => {
+  alert(`Todo: process checkout`);
+};
 </script>
 
 <template>
@@ -32,5 +36,5 @@ const listProduct = (productId) => {
   <h3>Summe</h3>
 
   <p>{{ store.getters.total }} €</p>
-  <p><button>Jetzt bestellen</button></p>
+  <p><button @click="processCheckout">Jetzt bestellen</button></p>
 </template>
