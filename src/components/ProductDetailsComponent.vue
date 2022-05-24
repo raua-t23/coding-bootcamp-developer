@@ -13,7 +13,7 @@ currentProduct.value = data.products.find((product) => product.id === +route.par
 
 <template>
   <div class="product-details">
-    <h2>{{ currentProduct.name }} ({{ route.params.id }})</h2>
+    <h2>{{ currentProduct.name }} | {{ currentProduct.price / 100 }} €</h2>
 
     <img v-if="currentProduct.imageUrl" :src="currentProduct.imageUrl" />
 
