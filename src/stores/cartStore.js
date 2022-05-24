@@ -29,7 +29,7 @@ const cartStore = createStore({
         }
       });
 
-      return total;
+      return (total / 100).toFixed(2);
     },
   },
   mutations: {

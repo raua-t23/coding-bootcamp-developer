@@ -14,7 +14,7 @@ const listProduct = (productId) => {
   }
 
   return `${store.getters.countById(productId)} * ${data.products[index].name} =
-  ${(data.products[index].price * store.getters.countById(productId)).toFixed(2)}`;
+  ${((data.products[index].price * store.getters.countById(productId)) / 100).toFixed(2)} €`;
 };
 </script>
 
@@ -31,6 +31,6 @@ const listProduct = (productId) => {
 
   <h3>Summe</h3>
 
-  <p>{{ store.getters.total.toFixed(2) }} €</p>
+  <p>{{ store.getters.total }} €</p>
   <p><button>Jetzt bestellen</button></p>
 </template>
