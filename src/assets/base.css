@@ -1,1 +1,4 @@
 /* Base CSS */
+a {
+    text-decoration: none;
+}

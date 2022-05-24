@@ -1,4 +1,6 @@
 <script setup>
+import AddRemoveButtons from './AddRemoveButtonsComponent.vue';
+
 defineProps({
   products: Array,
 });
@@ -6,7 +8,7 @@ defineProps({
 
 <template>
   <div class="product-list">
-    <h2>Alle Gerichte</h2>
+    <h2>Speisekarte</h2>
 
     <ul v-if="products && products.length > 0">
       <li v-for="product in products" :key="product.id">
@@ -15,6 +17,8 @@ defineProps({
           <img v-if="product.imageUrl" :src="product.imageUrl" alt="" />
           <p>{{ product.description }}</p>
         </router-link>
+
+        <AddRemoveButtons :product-id="product.id" :show-counter="true" />
       </li>
     </ul>
   </div>

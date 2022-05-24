@@ -6,6 +6,6 @@ import ProductListComponent from '../ProductListComponent.vue';
 describe('ProductDetailsComponent', () => {
   it('renders properly', () => {
     const wrapper = mount(ProductListComponent);
-    expect(wrapper.text()).toContain('Alle Gerichte');
+    expect(wrapper.text()).toContain('Speisekarte');
   });
 });
