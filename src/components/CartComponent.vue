@@ -29,6 +29,8 @@ const processCheckout = () => {
         {{ listProduct(product.id) }}
       </router-link>
 
+      <button class="delete" @click="store.commit('delete', product.id)">&times; Löschen</button>
+
       <AddRemoveButtons :product-id="product.id" />
     </li>
   </ul>
@@ -37,4 +39,12 @@ const processCheckout = () => {
 
   <p>{{ store.getters.total }} €</p>
   <p><button @click="processCheckout">Jetzt bestellen</button></p>
+
+  <button @click="store.commit('clear')">Warenkorb löschen</button>
 </template>
+
+<style>
+.delete {
+  margin-left: 0.5rem;
+}
+</style>

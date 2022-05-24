@@ -62,6 +62,15 @@ const cartStore = createStore({
 
       state.cart[index].count--;
     },
+    delete(state, productId) {
+      const index = state.cart.findIndex((product) => product.id === productId);
+
+      if (index === -1) {
+        return;
+      }
+
+      state.cart.splice(index, 1);
+    },
     clear(state) {
       state.cart = [];
     },
